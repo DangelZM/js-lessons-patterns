@@ -14,12 +14,5 @@
         <a href="./../../../index.html">Main page</a><br>
         <a href="http://addyosmani.com/">Сайт Addy Osmani</a>
     </div>
-    <script>
-        $(document).ready(function(){
-            $('a').filter(function() {
-                return this.hostname && this.hostname !== location.hostname;
-            }).addClass("external-link").attr("target", "_blank");
-        });
-    </script>
 </body>
 </html>

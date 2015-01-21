@@ -1,0 +1,109 @@
+*:focus {
+    outline: none;
+}
+
+.sliderWrap {
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+#slider {
+    margin: 20px 40px;
+}
+
+#slider {
+    height: 50px !important;
+    border: none !important;
+    border-radius: 0;
+}
+
+#slider .time-point {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 1px;
+    background: #000;
+}
+
+#slider .time-point.even {
+    height: 25px;
+    top:25px;
+}
+
+.ui-slider-range {
+    background: none !important;
+}
+
+.ui-slider-handle{
+    width: 90px !important;
+    background: #fff !important;
+    font-size: 14px;
+    top: 70px !important;
+    margin-left: -47px !important;
+    text-align: center;
+    padding: 3px;
+}
+.ui-slider-handle.ui-state-hover:before,
+.ui-slider-handle.ui-state-focus:before{
+    border-color: transparent transparent #999 transparent;
+}
+.ui-slider-handle:after {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -15px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #fff transparent;
+    line-height: 0px;
+    _border-color: #000000 #000000 #fff #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#fff');
+}
+
+.ui-slider-handle:before {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #ccc transparent;
+    line-height: 0px;
+    _border-color: #000000 #000000 #ccc #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#ccc');
+}
+
+#post {
+    margin-top: 50px;
+}
+
+#nav-holder {
+    width: 100%;
+}
+
+#nav-holder .slider-nav {
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    border: 1px solid #000;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 40px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#nav-holder .slider-nav.prev {
+    left: -70px;
+}
+
+#nav-holder .slider-nav.next {
+    right: -70px;
+}
