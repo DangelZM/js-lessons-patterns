@@ -1,0 +1,39 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #369;
+}
+
+#page {
+  width: 900px;
+  margin: 20px auto;
+  min-height: 480px;
+  background: #fff;
+  padding: 20px 20px 30px 40px;
+}
+#page .codeViewer .title {
+  background: #369;
+  color: #fff;
+  padding: 3px 5px;
+}
+#page .codeViewer .syntaxhighlighter {
+  margin-top: 0px !important;
+  margin-bottom: -15px;
+}
+#page .console-panel {
+  margin: 10px auto;
+}
+#page .console-panel .title {
+  background: #369;
+  color: #fff;
+  padding: 3px 5px;
+}
+#page .console-panel .body {
+  background: #efefef;
+  padding: 10px;
+  min-height: 60px;
+  border: 1px solid #ccc;
+}
