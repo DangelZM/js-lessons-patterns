@@ -1,12 +1,7 @@
-body, html {
+* {
   padding: 0;
   margin: 0;
 }
-
-body {
-  background: #369;
-}
-
 #page {
   width: 900px;
   margin: 20px auto;
@@ -36,4 +31,10 @@ body {
   padding: 10px;
   min-height: 60px;
   border: 1px solid #ccc;
+}
+#page .nav-link {
+  color: #369 !important;
+}
+#page .nav-link.active {
+  color: #f00 !important;
 }

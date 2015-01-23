@@ -3,19 +3,27 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Страница для таймлайна</title>
-    <link rel="stylesheet" href="../../../css/style.css"/>
     <link rel="stylesheet" href="./css/timeline_.css"/>
+    <link href="//addyosmani.com/resources/essentialjsdesignpatterns/book/styles/vendor.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css"/>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/timeline.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css"/>
 </head>
 <body>
 <div id="page">
     <h1>Страница для таймлайна</h1>
+    <a href="index.html" class="nav-link active">Page</a> | <a href="code.html" class="nav-link">Code</a>
+    <br><br>
     <div id="timeline"></div>
+    <script>
+        $(document).ready(function(){
+            $('body').attr('style', 'background: #369 !important');
+        });
+    </script>
 </div>
 </body>
 </html>

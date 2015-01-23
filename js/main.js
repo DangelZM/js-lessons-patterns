@@ -7,13 +7,18 @@
 })();
 
 var codeViewer = (function(document){
-    this.getCode = function(elemId, fileLocation){
+    this.getCode = function(elemId, fileLocation, type){
         var txt = '';
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function(){
             if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
                 txt = xmlhttp.responseText;
-                $('#' + elemId).html(txt);
+                if(type === 'html'){
+                    $('#' + elemId).text(txt);
+                } else {
+                    $('#' + elemId).html(txt);
+                }
+
                 SyntaxHighlighter.all();
             }
         };
