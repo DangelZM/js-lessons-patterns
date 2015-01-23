@@ -24,6 +24,7 @@ var codeViewer = (function(document){
         };
         xmlhttp.open("GET", fileLocation, true);
         xmlhttp.send();
+        return this;
     };
     
     return this;
